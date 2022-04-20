@@ -1,0 +1,6 @@
+framework module FFFastProject {
+  umbrella header "FFFastProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - FFFastProject (0.1.0)
+
+DEPENDENCIES:
+  - FFFastProject (from `../`)
+
+EXTERNAL SOURCES:
+  FFFastProject:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FFFastProject: 48f2553f2d630021b4a4cb6d870d978f3654d221
+
+PODFILE CHECKSUM: 27bd98ff443deb82de8d8ffe2d4a4261b925a65f
+
+COCOAPODS: 1.11.0

@@ -1,0 +1,22 @@
+{
+  "name": "FFFastProject",
+  "version": "0.1.0",
+  "summary": "A short description of FFFastProject.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hjsc_macmini/FFFastProject",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hjsc_macmini": "sczxfw@126.com"
+  },
+  "source": {
+    "git": "https://github.com/hjsc_macmini/FFFastProject.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "FFFastProject/Classes/**/*"
+}

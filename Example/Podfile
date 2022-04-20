@@ -1,0 +1,6 @@
+use_frameworks!
+target 'FFFastProject_Tests' do
+  pod 'FFFastProject', :path => '../'
+  
+  
+end
