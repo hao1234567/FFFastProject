@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FFHttpServiceInterface.h"
+#import "FFHttpServiceProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

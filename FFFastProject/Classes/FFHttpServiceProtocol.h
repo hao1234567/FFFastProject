@@ -1,5 +1,5 @@
 //
-//  FFHttpServiceInterface.h
+//  FFHttpServiceProtocol.h
 //  FFFastProject
 //
 //  Created by TonyWang on 2022/4/17.
@@ -10,13 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol FFHttpControllerInterface;
+@protocol FFHttpControllerProtocol;
 
-@protocol FFHttpServiceInterface <NSObject>
-//控制器对象
-@property(nonatomic,weak,nullable)
-    id<FFHttpControllerInterface> controller;
-//发起数据交换服务的回调方法
+@protocol FFHttpServiceProtocol <NSObject>
+//发起数据服务的回调方法
 -(void)service:(NSString *)tag
     param:(nullable NSDictionary *)form;
 @end
