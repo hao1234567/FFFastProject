@@ -1,5 +1,5 @@
 //
-//  UIView+Custom.h
+//  UIView+FFCustom.h
 //  FFFastProject
 //
 //  Created by TonyWang on 2022/4/17.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FFBaseDelegateProtocol.h"
 
-@interface UIView (Custom)
+@interface UIView (FFCustom)
 //快速设置视图的radius
 @property(nonatomic,assign)
     IBInspectable CGFloat layerRadius;
@@ -39,7 +39,7 @@
 +(nonnull __kindof UIView *)xibWithName:(nonnull NSString *)name;
 @end
 
-@interface UIView (AutoLayout)
+@interface UIView (FFAutoLayout)
 //使用布局系统推算宽度
 @property(nonatomic,assign,readonly)
     CGFloat layoutWidth;
@@ -51,7 +51,7 @@
     CGSize layoutSize;
 @end
 
-@interface UIView (Communication)
+@interface UIView (FFCommunication)
 //view标记
 @property(nonatomic,copy,nullable)
     IBInspectable NSString *viewName;

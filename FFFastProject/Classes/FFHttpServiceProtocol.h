@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol FFHttpControllerProtocol;
 
 @protocol FFHttpServiceProtocol <NSObject>
+//展示层对象
+@property(nonatomic,weak,nullable)
+    id<FFHttpControllerProtocol> controller;
 //发起数据服务的回调方法
 -(void)service:(NSString *)tag
     param:(nullable NSDictionary *)form;

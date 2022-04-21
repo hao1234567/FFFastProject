@@ -1,12 +1,12 @@
 //
-//  UIView+Custom.m
+//  UIView+FFCustom.m
 //  FFFastProject
 //
 //  Created by TonyWang on 2022/4/17.
 //  Copyright © 2022 TonyWang. All rights reserved.
 //
 
-#import "UIView+Custom.h"
+#import "UIView+FFCustom.h"
 #import <objc/runtime.h>
 
 //快速获取Xib里的Last视图
@@ -20,7 +20,7 @@
     ([[NSBundle mainBundle]loadNibNamed:\
     name owner:xibOwner options:opt])
 
-@implementation UIView (Custom)
+@implementation UIView (FFCustom)
 
 -(CGFloat)layerRadius
 {
@@ -134,7 +134,7 @@
 
 @end
 
-@implementation UIView (AutoLayout)
+@implementation UIView (FFAutoLayout)
 
 -(CGFloat)layoutWidth
 {
@@ -162,13 +162,13 @@
 
 @end
 
-@interface  UIViewCommunicationTemp: NSObject
+@interface  FFCommunicationTemp: NSObject
 @property(nonatomic,weak)
     id<FFBaseDelegateProtocol> viewDelegate;
 @end
-@implementation UIViewCommunicationTemp
+@implementation FFCommunicationTemp
 @end
-@implementation UIView (Communication)
+@implementation UIView (FFCommunication)
 
 -(NSString *)viewName
 {
@@ -202,8 +202,8 @@
 -(void)setViewDelegate:(id<FFBaseDelegateProtocol>)viewDelegate
 {
     if (!self.privateDelegate) {
-        UIViewCommunicationTemp *temp=
-            [UIViewCommunicationTemp new];
+        FFCommunicationTemp *temp=
+            [FFCommunicationTemp new];
         self.privateDelegate=temp;
     }
     self.privateDelegate.viewDelegate=viewDelegate;
@@ -223,13 +223,13 @@
     
 }
 
--(UIViewCommunicationTemp *)privateDelegate
+-(FFCommunicationTemp *)privateDelegate
 {
     return objc_getAssociatedObject(self, _cmd);
 }
 
 -(void)setPrivateDelegate:
-    (UIViewCommunicationTemp *)privateDelegate
+    (FFCommunicationTemp *)privateDelegate
 {
     objc_setAssociatedObject(self,
         @selector(privateDelegate),
