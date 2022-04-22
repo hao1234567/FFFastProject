@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @protocol FFHttpControllerProtocol;
 
 @protocol FFHttpServiceProtocol <NSObject>
@@ -20,5 +18,3 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)service:(NSString *)tag
     param:(nullable NSDictionary *)form;
 @end
-
-NS_ASSUME_NONNULL_END

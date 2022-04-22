@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface FFFastProjectConfig : NSObject
 //实例化方法（单例）
 +(instancetype)sharedConfig;
@@ -32,5 +30,3 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong,nullable)
     Class loginViewControllerClass;
 @end
-
-NS_ASSUME_NONNULL_END

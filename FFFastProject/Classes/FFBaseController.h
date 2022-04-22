@@ -13,8 +13,6 @@
 #import "FFLocalDataProtocol.h"
 #import "FFUserInfoProtocol.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 typedef NS_ENUM(NSUInteger, UserStatus) {
     //未登录状态
     UserStatusNotLoggedIn=1<<0,
@@ -114,5 +112,3 @@ typedef NS_ENUM(NSUInteger, UserStatus) {
 -(void)pushViewController:(nonnull UIViewController *)viewCtr
     requiredLogin:(BOOL)requiredLogin;
 @end
-
-NS_ASSUME_NONNULL_END

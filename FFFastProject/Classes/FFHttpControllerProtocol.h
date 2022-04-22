@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @protocol FFHttpControllerProtocol <NSObject>
 ////数据服务进度回调
 //-(void)handleProgress:(nonnull DataServiceProgress *)progress
@@ -18,4 +16,3 @@ NS_ASSUME_NONNULL_BEGIN
 //-(void)handleResult:(nonnull DataServiceResult *)data
 //    service:(NSInteger)tag;
 @end
-NS_ASSUME_NONNULL_END

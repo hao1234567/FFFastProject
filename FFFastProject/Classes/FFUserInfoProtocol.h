@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @protocol FFUserInfoProtocol <NSObject>
 //获取用户token
 -(NSString *)getUserToken;
@@ -22,5 +20,3 @@ NS_ASSUME_NONNULL_BEGIN
 //删除用户相关信息（退出登录）
 +(void)deleteUserInfo;
 @end
-
-NS_ASSUME_NONNULL_END
