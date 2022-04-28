@@ -72,6 +72,8 @@ typedef NS_ENUM(NSUInteger, UserStatus) {
 @property(nonatomic,strong,nonnull)
     id<FFLocalDataProtocol,FFUserInfoProtocol> serviceLocal;
 //Http服务对象
+//这块就要强耦合
+//避免高度可自定义以带来的不确定因素
 @property(nonatomic,strong,nonnull)
     id<FFHttpServiceProtocol> serviceHttp;
 //统一的导航栏Push返回按钮事件响应方法
